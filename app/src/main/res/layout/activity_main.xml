@@ -10,10 +10,18 @@
     android:orientation="vertical"
     tools:context=".MainActivity"
     >
-    <WebView
-        android:id="@+id/web_view"
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        />
+        android:layout_height="match_parent"
+        android:id="@+id/swipe_refresh_layout">
+
+        <WebView
+            android:id="@+id/web_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 </LinearLayout>
